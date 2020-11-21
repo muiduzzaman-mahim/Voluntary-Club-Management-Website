@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login </title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/User_Login.css">
+    <script src="../js/time.js"></script>
+    <script src="../js/User_Login.js"></script>
+</head>
+
+<body onload="display_ct()">
+    <span id="ct"></span>
+
+    <h1>Register here </h1>
+
+    <div style="text-align:center;">
+        <div class="Registration">
+            <button onclick="document.getElementById('id01').style.display='block'"
+                style="width:50%; border-radius: 5px;">Registration as a new VOLTEN Members</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <form class="modal-content animate" action="Regi_Database.php" method="post">
+                    <div class="container">
+                        <h2>Registration as a member of volten </h2><br /><br />
+                        <p>Please fill in this form to become a member </p><br />
+                        <hr>
+
+                        <label for="idnumber"><b>ID Number </b></label><br />
+                        <input type="text" placeholder="ID No." name="idno" required><br />
+
+                        <label for="name"><b>Your Name</b></label><br />
+                        <input type="text" placeholder="Enter name" name="name" required><br />
+
+
+                        <label for="contact"><b>Contact No.</b></label><br />
+                        <input type="text" placeholder="Enter Number " name="contact" required><br />
+
+                        <label for="email"><b>Enter email </b></label><br />
+                        <input type="email" placeholder="Enter email" name="email" required><br />
+
+
+                        <label for="password"><b>Password</b></label><br />
+                        <input type="password" placeholder="Enter Password" name="psw" required><br />
+
+
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Remember me
+                        </label><br />
+
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Registration</button><br />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br /><br />
+        <h2>If you already a member Login here<h2> <br />
+
+                <div style="text-align:center;">
+                    <button onclick="document.getElementById('id02').style.display='block'"
+                        style="width:30%;border-radius: 15px; background-color:black ; color:white; font-size: 25px;">Login
+                        Here </button>
+
+                    <div id="id02" class="modal2">
+
+                        <form class="modal-content animate" action="ulogin_data.php" method="POST">
+                            <div class="container">
+                                <label for="userID"><b>User ID</b></label>
+                                <input type="text" placeholder="Enter ID" name="ID" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <br />
+                                <button type="submit">Login</button>
+
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                    class="cancelbtn2">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                        // Get the modal2
+                        var modal2 = document.getElementById('id02');
+
+                        // When the user clicks anywhere outside of the modal2, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal2) {
+                                modal2.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <br /><br />
+
+                </div>
+                <div style="text-align:center;">
+                    <button onclick="document.getElementById('id03').style.display='block'"
+                        style="width:30%;border-radius: 15px; background-color:black ; color:white; font-size: 25px;">MEMBERS
+                        REQUIREMENTS </button>
+
+                    <div id="id03" class="modal3">
+                        <div class="Members">
+
+                            <div class="memreq">
+                                <h1>Memebers Requirement</h1>
+                            </div>
+
+                            <div class="memreqcont" style="text-align:left;">
+
+                                <h2><b><u>The Role of Volunteers in a Nonprofit Organization</u></b></h2><br />
+                                It would be impossible to function as a viable nonprofit organization with out a staff
+                                of volunteers. To make the process equable, the board of directors has passed a
+                                resolution to require every member to either volunteer - insert number - hours or to pay
+                                a fee for the work to be done by hourly workers.<br /><br />
+
+                                <h2><b><u>Committees</u></b></h2><br />
+                                The - insert Club Name - is always looking for new talent and your help. Have any ideas
+                                you'd like to share? <br /><br />
+
+                                Our club is able to provide services to the membership because of its volunteers. Help
+                                make your club bigger, stronger and better. If you're interested in joining any of the
+                                following committees let us know! Also note by joining a committee, you can fulfill your
+                                VOLUNTEER REQUIREMENTS!!<br /><br /><br />
+
+                                <h2><b> <u>Year Round Committees</u></b></h2><br />
+
+                                <ul>
+                                    <li>Public Relations</li>
+                                    <li>Synchronized Skating</li>
+                                    <li>Membership Chair</li>
+                                    <li>Ice Chair</li>
+                                    <li>Practice session monitor - checking skaters in, collecting money</li>
+                                    <li>Ice monitor - keeps order on the ice, and ensuring that club safety guidelines
+                                        are followed</li>
+                                    <li>Music - announce skaters and playing music,</li>
+                                    <li>Communications and Web Development</li>
+                                    <li>Development & Special Events</li>
+                                    <li>Financial Committee</li>
+                                    <li> Photography Committee</li>
+                                    <li>Membership Committee</li>
+                                    <li> Junior Board Committee</li>
+                                    <li>Coaches Committee</li>
+                                    <li> Rink Support and Development; including Dartfish System</li>
+                                    <li>Test Sessions Committee</<li>
+                                    <li> Fundraising Committee</li>
+                                    <li> Volunteer Committee</li>
+                                    <li>Seasonal Committees</li>
+                                    <li> Summer Skating Camp Committee</li>
+                                    <li> December Show</li>
+                                    <li> State Games</li>
+                                </ul>
+                                <br /><br /><br />
+                            </div>
+
+                            <div id="memben" style="text-align:left;">
+                                <h1><b> Benefits of Volunteering</b></h1>
+
+                                <p> <b>Volunteering</b> is an opportunity to develop a new skill, expand your career
+                                    options, be part of your community, gain a stronger sense of achievement, develop
+                                    new interests, problem solve, improve programs, make important networking contacts,
+                                    have new experiences, teach others, build self-confidence, gain leadership
+                                    experience, express gratitude for the help you have received, experience working on
+                                    a team, and meet a diverse range of people. </p> <br /><br />
+
+                                <p> <b>volten</b> appreciates volunteers and has a variety of options available. volten
+                                    offers ongoing training and support. There are volunteer benefits including
+                                    attending free events for hours of service<p><br /><br /><br />
+                                        <button type="button"
+                                            onclick="document.getElementById('id03').style.display='none'"
+                                            class="cancelbtn2">Back to Login Page</button> <br /><br />
+
+                            </div>
+
+
+                            <script>
+                                // Get the modal3
+                                var modal3 = document.getElementById('id03');
+
+                                // When the user clicks anywhere outside of the modal2, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal2) {
+                                        modal3.style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <br /><br />
+                        </div>
+                        <br /><br />
+
+</body>
+
+</html>
