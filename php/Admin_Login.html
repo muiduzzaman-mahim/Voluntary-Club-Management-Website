@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Login</title>
+    <title>Admin Login</title>
 
     <link rel="shortcut icon" href="../image/club_logo.png">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/center.css">
-    <link rel="stylesheet" href="../css/User_Login.css">
+    <link rel="stylesheet" href="../css/Admin_Login.css">
 
     <script src="../js/time.js"></script>
 </head>
@@ -18,18 +18,16 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
-    <div class="Member_login">
-        <img src="../image/Member_login.jpg" alt="member-login" width="70%">
-        <form action="User_Home.html">
+    <div class="admin_login">
+        <img src="../image/admin_login.gif" alt="">
+        <form action="Admin_Home.html">
             <br>
-            <input type="text" name="Member_name" id="Member_name" placeholder="Enter Member ID">
+            <input type="text" name="admin_name" id="admin_name" placeholder="Enter Admin User Name">
             <br>
-            <input type="password" name="Member_pass" id="Member_pass" placeholder="Enter Member Password">
+            <input type="password" name="admin_pass" id="admin_pass" placeholder="Enter Admin Password">
             <br>
-            
-            <br>
-            <input type="submit" name="Member_submit" id="Member_submit" value="Login" class="btn-danger">
-            <a href="U_Reg_member.html"><input type="button"  value="Register as a New Member" class="btn-success" id="regi_new_member"></a>
+            <input type="submit" name="admin_submit" id="admin_submit" value="Login" class="btn-danger">
+            <a href="User_Login.html"><input type="button"  value="Login as a Member" class="btn-success"></a>
         </form>
     </div>
     

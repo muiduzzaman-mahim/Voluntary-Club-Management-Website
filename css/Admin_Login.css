@@ -1,4 +1,4 @@
-.Member_login {
+.admin_login {
     width: 40%;
     height: auto;
     margin: 4% 0 5% 30%;
@@ -10,12 +10,12 @@
     -o-border-radius: 10px;
 }
 
-.Member_login {
+.admin_login {
     text-align: center;
-    padding:1% 0 1% 0%;
+    padding:0 0 1% 0%;
 }
 
-.Member_login input {
+.admin_login input {
     padding: 10px 30px 10px 30px;
     margin: 5px 10px 15px 0;
     border-radius: 15px;
@@ -24,7 +24,7 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.Member_login input:hover{
+.admin_login input:hover{
     transform: scale(1.1);
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -37,26 +37,12 @@
     -o-transform: scale(1.1);
 }
 
-#Member_name:hover, 
-#Member_pass:hover{
+#admin_name:hover, 
+#admin_pass:hover{
     border-style:dashed ;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-}
-
-#Member_submit:hover,
-#regi_new_member:hover{
-    transform: scale(.85);
-    transition: all .5s;
-    -webkit-transform: scale(.85);
-    -moz-transform: scale(.85);
-    -ms-transform: scale(.85);
-    -o-transform: scale(.85);
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
 }

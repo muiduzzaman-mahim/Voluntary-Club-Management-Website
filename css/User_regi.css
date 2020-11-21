@@ -12,7 +12,7 @@
 
 .Member_login {
     text-align: center;
-    padding:1% 0 1% 0%;
+    padding: 1% 0 1% 0%;
 }
 
 .Member_login input {
@@ -24,7 +24,8 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.Member_login input:hover{
+
+.Member_login input:hover {
     transform: scale(1.1);
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -37,18 +38,8 @@
     -o-transform: scale(1.1);
 }
 
-#Member_name:hover, 
-#Member_pass:hover{
-    border-style:dashed ;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-}
-
 #Member_submit:hover,
-#regi_new_member:hover{
+#login_back:hover{
     transform: scale(.85);
     transition: all .5s;
     -webkit-transform: scale(.85);
