@@ -1,6 +1,9 @@
 .body{
     width: 100%;
     background-image: url(../image/diu_full_bg.jpg);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.74);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;

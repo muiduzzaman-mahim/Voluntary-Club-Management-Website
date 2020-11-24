@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.body{
+.body {
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -23,12 +23,11 @@
     -o-transition: all .5s;
 }
 
-.contain{
+.contain {
     width: 90%;
     height: auto;
     margin-left: 5%;
     padding: .50% 0 1% 0;
-    background-color: bisque;
 }
 
 .foot {
@@ -48,7 +47,7 @@
     padding: 10px 0 10px 0;
 }
 
-.navbar{
+.navbar {
     text-align: center;
     width: 75%;
     border-radius: 15px;
@@ -59,7 +58,7 @@
     -o-border-radius: 15px;
 }
 
-.navbar button{
+.navbar button {
     padding: 10px 20px 10px 20px;
     font-size: 17px;
     font-weight: 600;
@@ -75,7 +74,7 @@
     -o-transition: all .5s;
 }
 
-.navbar button:hover{
+.navbar button:hover {
     box-shadow: rgb(99, 255, 27) 0px 0px 5px 0px;
     transform: scale(.80);
     transition: all .5s;
