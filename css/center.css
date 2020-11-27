@@ -31,20 +31,23 @@
 }
 
 .foot {
-    width: 80%;
+    width: 100%;
+    height: auto;
     float: left;
     text-align: center;
     background-color: black;
     color: antiquewhite;
-    padding: 10px 0 10px 0;
+    padding-top: 10px;
 }
 
 .info {
-    width: 20%;
+    width: 100%;
+    height: auto;
     float: left;
+    text-align: center;
     background-color: black;
     color: antiquewhite;
-    padding: 10px 0 10px 0;
+    padding-bottom: 10px;
 }
 
 .navbar {

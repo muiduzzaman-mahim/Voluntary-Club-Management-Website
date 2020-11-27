@@ -60,3 +60,16 @@
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
+
+.forget_password{
+    cursor: pointer;
+    color: rgb(165, 42, 42);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.forget_password:hover{
+    text-decoration: none;
+    
+}
