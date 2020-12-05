@@ -9,10 +9,30 @@
 }
 
 .about_us,
-.contact {
-    width: 80%;
-    margin-left: 10%;
+.contact,
+.comments {
+    width: 90%;
+    margin-left: 5%;
     text-align: justify;
+}
+
+.comments .video{
+    text-align: center;
+}
+
+.comments .video embed{
+    border-radius: 15px ;
+    border: green solid 7px;
+    box-shadow: 0 0 20px 5px rgb(121, 121, 121);
+    border-radius: 10px;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .contact img {

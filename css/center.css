@@ -78,7 +78,7 @@
 }
 
 .navbar button:hover {
-    box-shadow: rgb(99, 255, 27) 0px 0px 5px 0px;
+    box-shadow: rgb(81, 255, 0) 0px 0px 5px 0px;
     transform: scale(.80);
     transition: all .5s;
     -webkit-transition: all .5s;
