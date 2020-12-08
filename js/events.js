@@ -4,4 +4,3 @@ $(function () {
     $("#tabs").tabs();
 });
 
-//for fb events
