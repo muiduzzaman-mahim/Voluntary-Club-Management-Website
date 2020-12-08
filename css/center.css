@@ -7,6 +7,14 @@
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
+html{
+    scroll-behavior: smooth;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
 
 #ct {
     background-color: black;
