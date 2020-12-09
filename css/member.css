@@ -103,29 +103,27 @@ a:hover {
     text-align: center;
 }
 
-.advisor div{
-    display: inline;
-}
 
 .advisor h3,
-.convener h3 {
+.convener h3,
+.Member_list h3 {
     text-decoration: underline;
     font-weight: bold;
     text-align: center;
     font-size: 2.5vw;
+    padding-top: 1.10%;
+
 }
 
-.advisor img,
-.convener img {
-    width: 31% !important;
-    height: 40vh !important;
-    margin: 1.5% auto !important;
-    text-align: center !important;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+#Committee_Member{
+    background-image:url("../image/member.jpg");
+    background-color: rgba(0, 15, 7, 0.966);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    padding-bottom: 2%;
 }
 
 .Member_list {
@@ -137,6 +135,8 @@ a:hover {
     text-align: center;
     width: 100%;
     height: auto;
+    border: solid whitesmoke;
+    font-size: large;
 }
 
 .Member_list table tr td,
@@ -155,4 +155,9 @@ a:hover {
 .point-out p {
     width: 95%;
     margin-left: 2.5%;
+}
+
+.table table {
+    border: solid black;
+    color: black;
 }
