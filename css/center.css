@@ -37,7 +37,11 @@ html{
     margin-left: 5%;
     padding: .50% 0 1% 0;
 }
-
+.full-footer{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
 .foot {
     width: 100%;
     height: auto;
