@@ -117,7 +117,7 @@ a:hover {
 
 #Committee_Member{
     background-image:url("../image/member.jpg");
-    background-color: rgba(0, 15, 7, 0.966);
+    background-color: rgba(0, 0, 0, 0.884);
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: 100% 100%;
