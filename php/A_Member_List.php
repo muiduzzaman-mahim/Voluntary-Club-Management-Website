@@ -164,7 +164,7 @@
 
             </table>
         </div>
-        <a href="A_add_member.html"><button class="btn btn-danger" style="width: 25%; padding: 1.10%; margin-left: 37%;">Add New Member</button></a>
+        <a href="A_add_member.php"><button class="btn btn-danger" style="width: 25%; padding: 1.10%; margin-left: 37%;">Add New Member</button></a>
     </div>
 
     <hr>

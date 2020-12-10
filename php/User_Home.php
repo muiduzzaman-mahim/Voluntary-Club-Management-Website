@@ -35,14 +35,14 @@
                 </a>
 
                 <div class="options">
-                    <a href="U_member.html"> <button class="btn-danger">Member</button></a>
-                    <a href="U_event.html"><button class="btn-success">Events</button></a>
-                    <a href="U_activity.html"> <button class="btn-info">Our Activities</button></a>
+                    <a href="U_member.php"> <button class="btn-danger">Member</button></a>
+                    <a href="U_event.php"><button class="btn-success">Events</button></a>
+                    <a href="U_activity.php"> <button class="btn-info">Our Activities</button></a>
                     <br>
-                    <a href="U_about.html"><button class="btn-dark">About Us</button></a>
-                    <a href="U_update.html"><button class="btn-light">Update Profile</button></a>
+                    <a href="U_about.php"><button class="btn-dark">About Us</button></a>
+                    <a href="U_update.php"><button class="btn-light">Update Profile</button></a>
                     <br>
-                    <a href="User_Login.html"><button class="btn-danger" style="width: 50%; padding: 3px;">Log
+                    <a href="User_Login.php"><button class="btn-danger" style="width: 50%; padding: 3px;">Log
                             Out</button></a>
                 </div>
             </main>

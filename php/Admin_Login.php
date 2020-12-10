@@ -27,7 +27,7 @@
             <input type="password" name="admin_pass" id="admin_pass" placeholder="Enter Admin Password" required>
             <br>
             <input type="submit" name="admin_submit" id="admin_submit" value="Login" class="btn-danger">
-            <a href="User_Login.html"><input type="button"  value="Login as a Member" class="btn-success"></a>
+            <a href="User_Login.php"><input type="button"  value="Login as a Member" class="btn-success"></a>
         </form>
     </div>
     

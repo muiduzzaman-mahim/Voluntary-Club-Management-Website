@@ -27,12 +27,12 @@
 
     <div class="contain">
         <div class="navbar">
-            <a href="P_Home.html"> <button class="btn-outline-info">Home</button></a>
-            <a href="P_member.html"> <button class="btn-outline-danger">Member's Rules</button></a>
-            <a href="U_Reg_member.html" onclick="events()"><button class="btn-outline-success">Events</button></a>
-            <a href="P_activity.html"> <button class="btn-outline-info  active">Our Activities</button></a>
-            <a href="P_about.html"><button class="btn-outline-dark">About Us</button></a>
-            <a href="U_Reg_member.html"><button class="btn-danger">Join with US</button></a>
+            <a href="P_Home.php"> <button class="btn-outline-info">Home</button></a>
+            <a href="P_member.php"> <button class="btn-outline-danger">Member's Rules</button></a>
+            <a href="U_Reg_member.php" onclick="events()"><button class="btn-outline-success">Events</button></a>
+            <a href="P_activity.php"> <button class="btn-outline-info  active">Our Activities</button></a>
+            <a href="P_about.php"><button class="btn-outline-dark">About Us</button></a>
+            <a href="U_Reg_member.php"><button class="btn-danger">Join with US</button></a>
         </div>
     </div>
 

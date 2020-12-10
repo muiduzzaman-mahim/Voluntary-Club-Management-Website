@@ -20,15 +20,15 @@
 
     <div class="contain">
         <div class="navbar">
-            <a href="User_Home.html"> <button class="btn-outline-info">Home</button></a>
-            <a href="U_member.html"> <button class="btn-outline-danger">Members</button></a>
-            <a href="U_event.html"><button class="btn-outline-success">Events</button></a>
-            <a href="U_activity.html"> <button class="btn-outline-info">Our
+            <a href="User_Home.php"> <button class="btn-outline-info">Home</button></a>
+            <a href="U_member.php"> <button class="btn-outline-danger">Members</button></a>
+            <a href="U_event.php"><button class="btn-outline-success">Events</button></a>
+            <a href="U_activity.php"> <button class="btn-outline-info">Our
                     Activities</button></a>
-            <a href="U_about.html"><button class="btn-outline-dark">About Us</button></a>
-            <a href="U_update.html"><button class="btn-outline-primary
+            <a href="U_about.php"><button class="btn-outline-dark">About Us</button></a>
+            <a href="U_update.php"><button class="btn-outline-primary
                         active">Update Profile</button></a>
-            <a href="User_Login.html"><button class="btn-danger">Log Out</button></a>
+            <a href="User_Login.php"><button class="btn-danger">Log Out</button></a>
         </div>
     </div>
     <hr>

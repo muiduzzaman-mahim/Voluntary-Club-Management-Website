@@ -20,7 +20,7 @@
 
     <div class="Member_login">
         <img src="../image/register-login-add-on.png" alt="member-login" width="30%">
-        <form action="User_Home.html">
+        <form action="User_Home.php">
             <br>
             <input type="text" placeholder="Student ID/Employee ID" name="idno" required><br />
             <small><b>*Student ID/Employee ID will be your Member ID*</b></small><br><br>
@@ -39,7 +39,7 @@
 
             If you are already a member, Please Login Here.
             <br>
-            <a href="User_Login.html"><input type="button" value="Login as a Member" class="btn-success" id="login_back"></a>
+            <a href="User_Login.php"><input type="button" value="Login as a Member" class="btn-success" id="login_back"></a>
         </form>
     </div>
 

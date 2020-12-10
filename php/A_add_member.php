@@ -32,7 +32,7 @@
 
     <div class="Member_login">
         <img src="../image/register-login-add-on.png" alt="member-login" width="30%">
-        <form action="User_Home.html">
+        <form action="User_Home.php">
             <br>
             <input type="text" placeholder="Student ID/Employee ID" name="idno" required><br />
             <small><b>*Student ID/Employee ID will be your Member ID*</b></small><br><br>

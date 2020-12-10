@@ -38,12 +38,12 @@
                 </div>
 
                 <div class="options">
-                    <a href="P_member.html"> <button class="btn-danger">Member's Rule</button></a>
-                    <a href="U_Reg_member.html" onclick="events()"><button class="btn-success">Events</button></a>
-                    <a href="P_activity.html"> <button class="btn-info">Our Activities</button></a>
-                    <a href="P_about.html"><button class="btn-dark">About Us</button></a>
+                    <a href="P_member.php"> <button class="btn-danger">Member's Rule</button></a>
+                    <a href="U_Reg_member.php" onclick="events()"><button class="btn-success">Events</button></a>
+                    <a href="P_activity.php"> <button class="btn-info">Our Activities</button></a>
+                    <a href="P_about.php"><button class="btn-dark">About Us</button></a>
                     <br>
-                    <a href="U_Reg_member.html"><button class="btn-danger" style="width: 50%; padding: 3px;">Register as
+                    <a href="U_Reg_member.php"><button class="btn-danger" style="width: 50%; padding: 3px;">Register as
                             a New
                             Member</button></a>
                 </div>
