@@ -21,7 +21,7 @@
 
     <div class="Member_login">
         <img src="../image/register-login-add-on.png" alt="member-login" width="30%">
-        <form name="registration" action="User_Home.php" onsubmit="return password_check()" method="POST">
+        <form name="registration" action="U_Reg_DB.php" onsubmit="return password_check()" method="post">
             <br>
             <input type="text" placeholder="Student ID/Employee ID" name="idno" required><br />
             <small><b>*Student ID/Employee ID will be your Member ID*</b></small><br><br>
