@@ -19,9 +19,43 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
+    <div class = "db">
+        <!--Database connection-->
+        <?php
+        //connect with database configuration
+        require("config.php");
+        $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server." . mysqli_error($sql));
+
+        //variable Declaration 
+        $ID = $_POST["idno"];
+        $Name = $_POST["name"];
+        $contact = $_POST["contact"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        $query = "select * from registration where id = '$ID'";
+        $query_run = mysqli_query($sql, $query);
+
+        //same id check 
+        if (mysqli_num_rows($query_run) == 1) {
+            echo "<h1>Member ID already exist</h1><br/><br/>";
+        } else {
+            $registration = "INSERT INTO registration values('$ID','$Name','$contact','$email','$password')";
+            $result = mysqli_query($sql, $registration) or die("Error in inserting Data");
+
+            if ($result) {
+                echo "<h2>Successfully Registration. Now you can log in using your ID and Password. </h2>";
+            } else {
+                echo "<h1>Error in Registration process...</h1>";
+            }
+        }
+        ?>
+    </div>
+    
+    <!--Login Form-->
     <div class="Member_login">
         <img src="../image/Member_login.jpg" alt="member-login" width="70%">
-        <form action="User_Home.php">
+        <form action="User_Home.php" method="POST">
             <br>
             <input type="text" name="Member_name" id="Member_name" placeholder="Enter Member ID" required>
             <br>
@@ -31,12 +65,12 @@
             <br>
 
             <input type="submit" name="Member_submit" id="Member_submit" value="Login" class="btn-danger">
-            <a href="U_Reg_member.php"><input type="button"  value="Register as a New Member" class="btn-success" id="regi_new_member"></a>
+            <a href="U_Reg_member.php"><input type="button" value="Register as a New Member" class="btn-success" id="regi_new_member"></a>
             <br>
-            <a href="P_Home.php"><input type="button"  value="Enter as a guest" class="btn-info" id="guest_mode"></a>
+            <a href="P_Home.php"><input type="button" value="Enter as a guest" class="btn-info" id="guest_mode"></a>
         </form>
     </div>
-    
+
     <!--Footer-->
     <div class="full-footer">
         <div class="foot">
