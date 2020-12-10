@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/User_regi.css">
 
     <script src="../js/time.js"></script>
-    <script src="../js/all_alert.js"></script>
+    <script src="../js/all_alerts.js"></script>
 </head>
 
 

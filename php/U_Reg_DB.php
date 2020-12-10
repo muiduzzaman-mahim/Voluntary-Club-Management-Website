@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/User_regi.css">
 
     <script src="../js/time.js"></script>
-    <script src="../js/all_alert.js"></script>
+    <script src="../js/all_atert.js"></script>
 </head>
 
 
@@ -32,7 +32,7 @@
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $query = "select * from registration where ID = '$id'";
+    $query = "select * from registration where id = '$ID'";
     $query_run = mysqli_query($sql, $query);
 
     //same id check 
