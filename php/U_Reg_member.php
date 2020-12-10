@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/User_regi.css">
 
     <script src="../js/time.js"></script>
+    <script src="../js/all_alert.js"></script>
 </head>
 
 
@@ -20,7 +21,7 @@
 
     <div class="Member_login">
         <img src="../image/register-login-add-on.png" alt="member-login" width="30%">
-        <form action="User_Home.php">
+        <form name="registration" action="User_Home.php" onsubmit="return password_check()" method="POST">
             <br>
             <input type="text" placeholder="Student ID/Employee ID" name="idno" required><br />
             <small><b>*Student ID/Employee ID will be your Member ID*</b></small><br><br>
@@ -33,7 +34,7 @@
 
             <input type="password" placeholder="Password" name="password" required><br />
 
-            <input type="password" placeholder="Confirm Password" name="password" required><br />
+            <input type="password" placeholder="Confirm Password" name="confirm_password" required><br />
 
             <input type="submit" name="Member_submit" id="Member_submit" value="Register" class="btn-danger"><br>
 
