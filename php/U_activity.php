@@ -42,7 +42,7 @@
         <section>
 
             <div class="video">
-                <video width="500vw" height="286vh" controls autoplay loop>
+                <video width="500vw" height="286vh" controls autoplay muted loop>
                     <source src="../video/ac_v1.mp4">
                 </video>
             </div>
