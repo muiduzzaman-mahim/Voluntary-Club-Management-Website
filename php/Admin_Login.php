@@ -20,7 +20,7 @@
 
     <div class="admin_login">
         <img src="../image/admin_login.gif" alt="">
-        <form action="Admin_Home.html">
+        <form action="Admin_Home.php">
             <br>
             <input type="text" name="admin_name" id="admin_name" placeholder="Enter Admin User Name" required>
             <br>

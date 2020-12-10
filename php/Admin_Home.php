@@ -22,13 +22,13 @@
         <h1>Welcome to Admin Home page. </h1>
         <h2>You can do the following action from this page.</h2>
         <div class="navs">
-            <a href="Admin_Home.html"> <button class="btn-outline-info  active">Admin Home</button></a>
-            <a href="A_Member_List.html"> <button class="btn-outline-danger">Members List</button></a><br>
-            <a href="A_Add_Event.html"><button class="btn-outline-success">Add Events</button></a>
-            <a href="A_Search.html"> <button class="btn-outline-info">Search</button></a><br>
-            <a href="A_Update.html"><button class="btn-outline-dark">Update</button></a>
-            <a href="A_Delete.html"><button class="btn-outline-primary">Delete</button></a><br>
-            <a href="Admin_Login.html"><button class="btn-danger last" >Log Out</button></a>
+            <a href="Admin_Home.php"> <button class="btn-outline-info  active">Admin Home</button></a>
+            <a href="A_Member_List.php"> <button class="btn-outline-danger">Members List</button></a><br>
+            <a href="A_Add_Event.php"><button class="btn-outline-success">Add Events</button></a>
+            <a href="A_Search.php"> <button class="btn-outline-info">Search</button></a><br>
+            <a href="A_Update.php"><button class="btn-outline-dark">Update</button></a>
+            <a href="A_Delete.php"><button class="btn-outline-primary">Delete</button></a><br>
+            <a href="Admin_Login.php"><button class="btn-danger last" >Log Out</button></a>
         </div>
     </div>
 
