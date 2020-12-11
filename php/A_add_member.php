@@ -18,7 +18,7 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
-    <div class="contain" style="background-color: rgba(255, 0, 0, 0.548); border-radius: 0 0 20px 20px;">
+    <div class="contain" style="background-color: rgba(255, 0, 0, 0.548); width: 100%; margin-left: 0;">
         <div class="navbar">
             <a href="Admin_Home.php"> <button class="btn-outline-info">Admin Home</button></a>
             <a href="A_Member_List.php"> <button class="btn-outline-danger active"> Members</button></a>
