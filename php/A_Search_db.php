@@ -39,23 +39,36 @@
             </form>
         </div>
 
+        <!--Database Connection-->
+        <?php
+        require("config.php");
+
+        $searchID = $_POST["searchID"];
+        $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+        $query = "select * from registration where id = '$searchID'";
+        $result = mysqli_query($sql, $query);
+
+        $row = mysqli_fetch_array($result, MYSQLI_NUM);
+        ?>
+
         <div class="Member_login" style="width: 30%; float: left; margin:  2% 10% 2% 5%;">
             <h3 style="text-decoration: underline;"><b>Member information</b></h3>
             <form name="search_result" action="A_Search_db.php" method="POST">
                 <label for="id"><b>Member ID</b></label><br>
-                <input type="text" placeholder="Student ID" name="idno" readonly><br />
+                <input type="text" placeholder="Member ID" name="idno" value="<?php if ($row) { echo "$row[0]"; } else { null; } ?>" readonly><br />
 
                 <label for="name"><b>Full Name</b></label><br>
-                <input type="text" placeholder="Your Full name" name="name" readonly><br />
+                <input type="text" placeholder="Your Full name" name="name" value="<?php if ($row) { echo "$row[1]"; } else { null; } ?>" readonly><br />
 
                 <label for="contact"><b>Contact Number</b></label><br>
-                <input type="text" placeholder="Contact Number" name="contact" readonly><br />
+                <input type="text" placeholder="Contact Number" name="contact" value="<?php if ($row) { echo "$row[2]"; } else { null; } ?>" readonly><br />
 
                 <label for="Email"><b>Email Address</b></label><br>
-                <input type="email" placeholder="Email Address" name="email" readonly><br />
+                <input type="email" placeholder="Email Address" name="email" value="<?php if ($row) { echo "$row[3]"; } else { null; } ?>" readonly><br />
 
                 <label for="password"><b>Password</b></label><br>
-                <input type="password" placeholder="Password" name="password" readonly><br />
+                <input type="text" placeholder="Password" name="password" value="<?php if ($row) { echo "$row[4]"; } else { null; } ?>" readonly><br />
 
             </form>
         </div>

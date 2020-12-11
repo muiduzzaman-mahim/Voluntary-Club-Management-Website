@@ -32,7 +32,7 @@
 
     <div style="width: 100%;float: left;">
         <div class="Member_login" style="width: 40%; float:left; margin: 10% 5% 1.0% 10%;">
-            <form action="#">
+            <form name="search_for_delete" action="A_Delete_db.php" method="POST">
                 <br>
                 <input type="text" placeholder="Search By Student ID" name="searchID" required>
                 <input type="submit" class="btn btn-info" value="Search">
@@ -40,16 +40,24 @@
         </div>
 
         <div class="Member_login" style="width: 30%; float: left; margin:  2% 10% 2% 5%;">
-            <form action="#">
-                <br>
+
+            <h3 style="text-decoration: underline;"><b>Member information</b></h3>
+
+            <form name="search_result" action="A_Delete_db.php" method="POST">
+
+                <label for="id"><b>Member ID</b></label><br>
                 <input type="text" placeholder="Student ID" name="idno" required><br />
 
+                <label for="name"><b>Full Name</b></label><br>
                 <input type="text" placeholder="Your Full name" name="name" required><br />
 
+                <label for="contact"><b>Contact Number</b></label><br>
                 <input type="text" placeholder="Contact Number" name="contact" required><br />
 
+                <label for="Email"><b>Email Address</b></label><br>
                 <input type="email" placeholder="Email Address" name="email" required><br />
 
+                <label for="password"><b>Password</b></label><br>
                 <input type="password" placeholder="Password" name="password" required><br />
 
                 <input type="submit" class="btn btn-danger" value="Delete">
