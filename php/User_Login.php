@@ -23,7 +23,7 @@
         <img src="../image/Member_login.jpg" alt="member-login" width="70%">
         <form action="User_Login_db.php" method="POST">
             <br>
-            <input type="text" name="ID" id="Member_name" placeholder="Enter Member ID" required>
+            <input type="text" name="id" id="Member_name" placeholder="Enter Member ID" required>
             <br>
             <input type="password" name="password" id="Member_pass" placeholder="Enter Your Password" required>
             <br>
@@ -31,6 +31,7 @@
             <br>
 
             <input type="submit" name="Member_submit" id="Member_submit" value="Login" class="btn-danger">
+                        
             <a href="U_Reg_member.php"><input type="button" value="Register as a New Member" class="btn-success" id="regi_new_member"></a>
             <br>
             <a href="P_Home.php"><input type="button" value="Enter as a guest" class="btn-info" id="guest_mode"></a>
