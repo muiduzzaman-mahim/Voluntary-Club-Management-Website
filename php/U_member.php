@@ -50,7 +50,7 @@ $row = mysqli_fetch_array($result, MYSQLI_NUM);
             <a href="U_activity.php"> <button class="btn-outline-info">Our Activities</button></a>
             <a href="U_about.php"><button class="btn-outline-dark">About Us</button></a>
             <a href="U_update.php"><button class="btn-outline-primary">Update Profile</button></a>
-            <a href="User_Login.php"><button class="btn-danger">Log Out</button></a>
+            <a href="User_logout.php"><button class="btn-danger">Log Out</button></a>
         </div>
     </div>
     <hr>

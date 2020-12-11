@@ -61,7 +61,7 @@ $row = mysqli_fetch_array($result, MYSQLI_NUM);
                     <a href="U_about.php"><button class="btn-dark">About Us</button></a>
                     <a href="U_update.php"><button class="btn-light">Update Profile</button></a>
                     <br>
-                    <a href="User_Login.php"><button class="btn-danger" style="width: 50%; padding: 3px;">Log
+                    <a href="User_logout.php"><button class="btn-danger" style="width: 50%; padding: 3px;">Log
                             Out</button></a>
                 </div>
             </main>
