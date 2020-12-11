@@ -7,7 +7,8 @@
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -37,11 +38,13 @@ html{
     margin-left: 5%;
     padding: .50% 0 1% 0;
 }
-.full-footer{
+
+.full-footer {
     width: 100%;
     height: auto;
     bottom: 0;
 }
+
 .foot {
     width: 100%;
     height: auto;

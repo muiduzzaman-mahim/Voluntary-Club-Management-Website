@@ -30,7 +30,7 @@
 
   <body onload="display_ct()" class="body">
       <div id="ct"></div>
-      
+
       <button class="btn btn-dark" style="width: max-content; float: right; border-radius: 0;"><?php echo "{$row[1]}" ?> </button>
 
       <div class="contain">
@@ -48,7 +48,43 @@
       </div>
       <hr>
 
-      <!--Update profile-->
+      <!--database updated-->
+      <div style="width: max-content; text-align: center; color: aqua; background-color: black; padding:1.5%; margin:1% auto; border: solid gray 5px; border-radius: 25px;">
+          <?php
+            require("config.php");
+
+            $idno = $_POST["idno"];
+            $name = $_POST["name"];
+            $contact = $_POST["contact"];
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+
+            $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+            $update_db = "UPDATE registration SET id = '$idno', name = '$name', contact = '$contact', email = '$email', password = '$password' WHERE id = '$idno'";
+            $result = mysqli_query($sql, $update_db);
+
+            if ($result) {
+                echo "<h3> Your Profile is successfully updated.</h3>";
+            } else {
+                echo "<h3>Oops..! <br/> Error in updating your information.</h3>";
+            }
+            ?>
+      </div>
+
+      <!--Updated-->
+      <?php
+        require("config.php");
+        $searchID = $_SESSION["id"];
+        $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+        $query = "select * from registration where id = '$searchID'";
+        $result = mysqli_query($sql, $query);
+
+        $row = mysqli_fetch_array($result, MYSQLI_NUM);
+        ?>
+
+      <!--Updated profile-->
       <div class="Member_login">
           <form name="user_profile" action="U_update_db.php" method="POST">
               <?php
@@ -57,7 +93,7 @@
               <br>
               <label for="id"><b>Member ID</b></label><br>
               <input type="text" placeholder="Student ID" name="idno" value="<?php echo "$row[0]"; ?>" readonly><br />
-              
+            
               <label for="name"><b>Full Name</b></label><br>
               <input type="text" placeholder="Your Full name" name="name" value="<?php echo "$row[1]"; ?>" required><br />
 

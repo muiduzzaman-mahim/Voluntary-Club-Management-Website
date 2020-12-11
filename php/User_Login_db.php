@@ -18,7 +18,7 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
-    <div style="text-align: center; color: aqua; background-color: black; width:fit-content;padding: 0 1% 0 1%; margin:1% auto -2% auto; border: solid gray 5px; border-radius: 25px;">
+    <div style="text-align: center; color: aqua; background-color: black; width:50vw;padding: 0 1% 0 1%; margin:1% auto -2% auto; border: solid gray 5px; border-radius: 25px;">
         <hr>
         <!--Database check-->
         <?php
