@@ -19,6 +19,41 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
+    <!--Database connection-->
+    <div style="text-align: center; color: aqua; background-color: black; width:fit-content;padding: 0 1% 0 1%; margin:1% auto -2% auto; border: solid gray 5px; border-radius: 25px;">
+        <hr>
+        <?php
+        //connect with database configuration
+        require("config.php");
+        $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server." . mysqli_error($sql));
+
+        //variable Declaration 
+        $ID = $_POST["idno"];
+        $Name = $_POST["name"];
+        $contact = $_POST["contact"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        $query = "select * from registration where id = '$ID'";
+        $query_run = mysqli_query($sql, $query);
+
+        //same id check 
+        if (mysqli_num_rows($query_run) == 1) {
+            echo "<h2><b>Member ID already exist. <br/>You can log in using your previous Member ID and Password.</b></h2>";
+        } else {
+            $registration = "INSERT INTO registration values('$ID','$Name','$contact','$email','$password')";
+            $result = mysqli_query($sql, $registration) or die("Error in inserting Data");
+
+            if ($result) {
+                echo "<h2><b>Successfully Registration. <br/> Now you can log in using your ID and Password.</b> </h2>";
+            } else {
+                echo "<h2><b>Error in Registration process...</b></h2>";
+            }
+        }
+        ?>
+        <hr>
+    </div>
+
     <!--Login Form-->
     <div class="Member_login">
         <img src="../image/Member_login.jpg" alt="member-login" width="70%">
