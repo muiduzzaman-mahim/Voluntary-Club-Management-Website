@@ -26,7 +26,7 @@ session_start();
         <div class="navbar">
             <a href="Admin_Home.php"> <button class="btn-outline-info">Admin Home</button></a>
             <a href="A_Member_List.php"> <button class="btn-outline-danger"> Members</button></a>
-            <a href="A_Add_Event.php"><button class="btn-outline-success">Add Events</button></a>
+             
             <a href="A_Search.php"> <button class="btn-outline-info">Search</button></a>
             <a href="A_Update.php"><button class="btn-outline-dark">Update</button></a>
             <a href="A_Delete.php"><button class="btn-outline-primary active">Delete</button></a>
