@@ -15,18 +15,17 @@
     <script src="../js/all_alerts.js"></script>
 </head>
 
-
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
     <!--Login Form-->
     <div class="Member_login">
         <img src="../image/Member_login.jpg" alt="member-login" width="70%">
-        <form action="User_Home.php" method="POST">
+        <form action="User_Login_db.php" method="POST">
             <br>
-            <input type="text" name="Member_name" id="Member_name" placeholder="Enter Member ID" required>
+            <input type="text" name="ID" id="Member_name" placeholder="Enter Member ID" required>
             <br>
-            <input type="password" name="Member_pass" id="Member_pass" placeholder="Enter Your Password" required>
+            <input type="password" name="password" id="Member_pass" placeholder="Enter Your Password" required>
             <br>
             <small onclick="Contact_With_Committee()"><a href="P_member.php" class="forget_password">Forgot Password?</a></small>
             <br>
