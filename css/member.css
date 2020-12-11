@@ -115,8 +115,8 @@ a:hover {
 
 }
 
-#Committee_Member{
-    background-image:url("../image/member.jpg");
+#Committee_Member {
+    background-image: url("../image/member.jpg");
     background-color: rgba(0, 0, 0, 0.884);
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -140,7 +140,8 @@ a:hover {
 }
 
 .Member_list table tr td,
-.Member_list table tr {
+.Member_list table tr,
+.Member_list table tr th {
     width: auto;
     padding: 2%;
 }
@@ -158,6 +159,6 @@ a:hover {
 }
 
 .table table {
-    border: solid black;
+    border: solid rgb(1, 83, 83);
     color: black;
 }

@@ -234,13 +234,13 @@
             </div>
 
             <div class="Member_list">
-                <h3>Other Members List</h3>
+                <h3>Other Committee Members List</h3>
                 <table border="1">
                     <tr>
-                        <td>Name</td>
-                        <td>Position</td>
-                        <td>Email</td>
-                        <td>Contact</td>
+                        <td><b>Name</b></td>
+                        <td><b>Position</b></td>
+                        <td><b>Email</b></td>
+                        <td><b>Contact</b></td>
                     </tr>
                     <tr>
                         <td>Mahfuzur Rahman Mehedi</td>
@@ -280,10 +280,33 @@
             <div class="Member_list table">
                 <table border="1">
                     <tr>
-                        <td>Name</td>
-                        <td>Student ID</td>
+                        <th><b>Name</b></th>
+                        <th><b>Student ID</b></th>
                     </tr>
-                    
+
+                    <!--Database connection-->
+                    <?php
+                    require("config.php");
+
+                    $sql = mysqli_connect($host, $user, $pass, $db);
+
+                    $query = "select name, id from registration";
+                    $result = mysqli_query($sql, $query);
+                    $x = 1;
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<tr>" .
+
+                                "<td>$row[0]</td>" .
+                                "<td>$row[1]</td>" .
+
+                                "</tr>";
+                            $x++;
+                        }
+                    } else
+                        echo "<font color=white size=5  align=left><br>Oops!! There is no member at this time Thanks!<br></font>";
+                    ?>
                 </table>
             </div>
 
