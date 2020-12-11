@@ -1,3 +1,12 @@
+<?php
+require("config.php");
+session_start();
+if (!isset($_SESSION["user_name"])) {
+    require("session_alert.php");
+    header("Refresh: $sec; url=Admin_Login.php");
+    die;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,19 +66,39 @@
             <form name="search_result" action="A_Update_db_updated.php" method="POST">
 
                 <label for="id"><b>Member ID</b></label><br>
-                <input type="text" placeholder="Student ID" name="idno" value="<?php if ($row) { echo "$row[0]"; } else { null; } ?>" required><br />
+                <input type="text" placeholder="Student ID" name="idno" value="<?php if ($row) {
+                                                                                    echo "$row[0]";
+                                                                                } else {
+                                                                                    null;
+                                                                                } ?>" required><br />
 
                 <label for="name"><b>Full Name</b></label><br>
-                <input type="text" placeholder="Your Full name" name="name" value="<?php if ($row) { echo "$row[1]"; } else { null; } ?>" required><br />
+                <input type="text" placeholder="Your Full name" name="name" value="<?php if ($row) {
+                                                                                        echo "$row[1]";
+                                                                                    } else {
+                                                                                        null;
+                                                                                    } ?>" required><br />
 
                 <label for="contact"><b>Contact Number</b></label><br>
-                <input type="text" placeholder="Contact Number" name="contact" value="<?php if ($row) { echo "$row[2]"; } else { null; } ?>" required><br />
+                <input type="text" placeholder="Contact Number" name="contact" value="<?php if ($row) {
+                                                                                            echo "$row[2]";
+                                                                                        } else {
+                                                                                            null;
+                                                                                        } ?>" required><br />
 
                 <label for="Email"><b>Email Address</b></label><br>
-                <input type="email" placeholder="Email Address" name="email" value="<?php if ($row) { echo "$row[3]"; } else { null; } ?>" required><br />
+                <input type="email" placeholder="Email Address" name="email" value="<?php if ($row) {
+                                                                                        echo "$row[3]";
+                                                                                    } else {
+                                                                                        null;
+                                                                                    } ?>" required><br />
 
                 <label for="password"><b>Password</b></label><br>
-                <input type="text" placeholder="Password" name="password" value="<?php if ($row) { echo "$row[4]"; } else { null; } ?>" required><br />
+                <input type="text" placeholder="Password" name="password" value="<?php if ($row) {
+                                                                                        echo "$row[4]";
+                                                                                    } else {
+                                                                                        null;
+                                                                                    } ?>" required><br />
 
                 <input type="submit" class="btn btn-danger" value="Update">
 
@@ -79,7 +108,7 @@
     </div>
 
     <!--Footer-->
-    <div class="full-footer" >
+    <div class="full-footer">
         <div class="foot">
             &copyDIU-Voluntary Club. All Rights are reserved 2020
         </div>
