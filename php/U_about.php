@@ -1,3 +1,16 @@
+<!--Database Connection-->
+<?php
+require("config.php");
+session_start();
+$searchID = $_SESSION["id"];
+$sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+$query = "select * from registration where id = '$searchID'";
+$result = mysqli_query($sql, $query);
+
+$row = mysqli_fetch_array($result, MYSQLI_NUM);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,10 +99,7 @@
             <br><br>
 
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3616951745144!2d90.31872971427846!3d23.87678968985472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3f09c4e7d23%3A0x97920fd0733e5ca6!2sDIU%20Permanent%20Campus%20%2C%20Ashulia!5e0!3m2!1sen!2sbd!4v1606508670676!5m2!1sen!2sbd"
-                    width="100%" height="500px" frameborder="0" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3616951745144!2d90.31872971427846!3d23.87678968985472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3f09c4e7d23%3A0x97920fd0733e5ca6!2sDIU%20Permanent%20Campus%20%2C%20Ashulia!5e0!3m2!1sen!2sbd!4v1606508670676!5m2!1sen!2sbd" width="100%" height="500px" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <br><br>
 

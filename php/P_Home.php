@@ -18,6 +18,8 @@
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
+    <button class="btn btn-dark" style="width: max-content; float: right; border-radius: 0;">Guest</button>
+
     <video src="../video/ac_v1.mp4" autoplay loop playsinline muted></video>
 
     <div class="contains">

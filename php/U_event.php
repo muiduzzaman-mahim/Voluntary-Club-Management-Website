@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<!--Database Connection-->
+<?php
+require("config.php");
+session_start();
+$searchID = $_SESSION["id"];
+$sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+$query = "select * from registration where id = '$searchID'";
+$result = mysqli_query($sql, $query);
+
+$row = mysqli_fetch_array($result, MYSQLI_NUM);
+?>
+
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -58,8 +71,7 @@
             <div>
                 <div class="timer">
                     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                    <a href="https://logwork.com/countdown-2ewk" class="countdown-timer" data-style="columns"
-                        data-timezone="Europe/London" data-date="2020-12-20 08:53">শীত বস্ত্র বিতরণ কর্মসুচি</a>
+                    <a href="https://logwork.com/countdown-2ewk" class="countdown-timer" data-style="columns" data-timezone="Europe/London" data-date="2020-12-20 08:53">শীত বস্ত্র বিতরণ কর্মসুচি</a>
                 </div>
                 <div class="details">
                     <p>
@@ -72,8 +84,7 @@
                         যারা আমাদের কাজে শরীক হতে চাচ্ছেন তারা নিজের ফর্ম টি পূরণ করতে পারেন এবং আমাদের ক্লাবের অফিসে
                         আপনার পোশাক পাঠিয়ে দিতে পারেন।
                         <br>
-                        সাবমিশন লিংক : <a
-                            href="https://forms.gle/WA8haqWMQyYjUVig7">https://forms.gle/WA8haqWMQyYjUVig7</a>
+                        সাবমিশন লিংক : <a href="https://forms.gle/WA8haqWMQyYjUVig7">https://forms.gle/WA8haqWMQyYjUVig7</a>
                         <br>
                         সময় : 20/12/2020
                     </p>

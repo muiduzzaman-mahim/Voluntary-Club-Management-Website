@@ -1,3 +1,16 @@
+<!--Database Connection-->
+<?php
+require("config.php");
+session_start();
+$searchID = $_SESSION["id"];
+$sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
+
+$query = "select * from registration where id = '$searchID'";
+$result = mysqli_query($sql, $query);
+
+$row = mysqli_fetch_array($result, MYSQLI_NUM);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +34,7 @@
     <div class="contains">
         <div class="welcome">
             <a href="#main">
-                <h2><img src="../video/down_arrow.gif" alt=""><b> Welcome to Our Official Website </b><img
-                        src="../video/down_arrow.gif" alt=""></h2>
+                <h2><img src="../video/down_arrow.gif" alt=""><b> Welcome to Our Official Website </b><img src="../video/down_arrow.gif" alt=""></h2>
             </a>
         </div>
 
