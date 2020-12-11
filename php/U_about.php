@@ -2,6 +2,12 @@
 <?php
 require("config.php");
 session_start();
+if (!isset($_SESSION["id"])) {
+    require("session_alert.php");
+    header("Refresh: $sec; url=User_Login.php");
+    die;
+}
+  
 $searchID = $_SESSION["id"];
 $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
 
@@ -9,7 +15,7 @@ $query = "select * from registration where id = '$searchID'";
 $result = mysqli_query($sql, $query);
 
 $row = mysqli_fetch_array($result, MYSQLI_NUM);
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">

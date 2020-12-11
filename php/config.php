@@ -1,5 +1,5 @@
 <?php
- $sec=3;
+ $sec=5;
 	$host="localhost"; 
 	$user="root"; 
 	$pass="nopass"; 

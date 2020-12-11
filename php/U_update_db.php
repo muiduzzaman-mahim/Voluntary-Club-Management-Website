@@ -2,6 +2,12 @@
   <?php
     require("config.php");
     session_start();
+    if (!isset($_SESSION["id"])) {
+        require("session_alert.php");
+        header("Refresh: $sec; url=User_Login.php");
+        die;
+    }
+
     $searchID = $_SESSION["id"];
     $sql = mysqli_connect($host, $user, $pass, $db) or die("Cannot connect server.");
 
@@ -93,7 +99,7 @@
               <br>
               <label for="id"><b>Member ID</b></label><br>
               <input type="text" placeholder="Student ID" name="idno" value="<?php echo "$row[0]"; ?>" readonly><br />
-            
+
               <label for="name"><b>Full Name</b></label><br>
               <input type="text" placeholder="Your Full name" name="name" value="<?php echo "$row[1]"; ?>" required><br />
 
