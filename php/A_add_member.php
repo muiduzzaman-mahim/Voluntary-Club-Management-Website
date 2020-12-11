@@ -32,7 +32,7 @@
 
     <div class="Member_login">
         <img src="../image/register-login-add-on.png" alt="member-login" width="30%">
-        <form action="User_Home.php">
+        <form name="admin_add_members" action="A_Add_member_db.php" method="POST">
             <br>
             <input type="text" placeholder="Student ID/Employee ID" name="idno" required><br />
             <small><b>*Student ID/Employee ID will be your Member ID*</b></small><br><br>
@@ -44,8 +44,6 @@
             <input type="email" placeholder="Email Address" name="email" required><br />
 
             <input type="password" placeholder="Password" name="password" required><br />
-
-            <input type="password" placeholder="Confirm Password" name="password" required><br />
 
             <input type="submit" name="Member_submit" id="Member_submit" value="ADD" class="btn-danger"><br>
 

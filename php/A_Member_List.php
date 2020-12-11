@@ -162,6 +162,32 @@
                     <td>Email</td>
                 </tr>
 
+                <!--Database connection-->
+                <?php
+                require("config.php");
+
+                $sql = mysqli_connect($host, $user, $pass, $db);
+
+                $query = "select name, id, contact, email from registration";
+                $result = mysqli_query($sql, $query);
+                $x = 1;
+
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "<tr>" .
+
+                            "<td>$row[0]</td>" .
+                            "<td>$row[1]</td>" .
+                            "<td>$row[2]</td>" .
+                            "<td>$row[3]</td>" .
+
+                            "</tr>";
+                        $x++;
+                    }
+                } else
+                    echo "<font color=white size=5  align=left><br>Oops!! There is no member at this time Thanks!<br></font>";
+                ?>
+
             </table>
         </div>
         <a href="A_add_member.php"><button class="btn btn-danger" style="width: 25%; padding: 1.10%; margin-left: 37%;">Add New Member</button></a>

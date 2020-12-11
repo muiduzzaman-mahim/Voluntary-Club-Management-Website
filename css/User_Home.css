@@ -1,6 +1,6 @@
 .welcome {
-    width: 100%;
-    height: 600px !important;
+    width: 100vh;
+    height: 95vh !important;
     transition: all 1s !important;
     -webkit-transition: all 1s !important;
     -moz-transition: all 1s !important;
@@ -52,8 +52,8 @@ video {
 
 main {
     background-color: rgba(0, 41, 29, 0.877);
-    padding-bottom: 7%;
-    padding-top: 3%;
+    padding-bottom: 7vh;
+    padding-top: 5vh;
 }
 
 .body {
