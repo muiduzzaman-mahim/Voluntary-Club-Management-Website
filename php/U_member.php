@@ -33,6 +33,8 @@ $row = mysqli_fetch_array($result, MYSQLI_NUM);
     <!--Time-->
     <div id="ct"></div>
 
+    <button class="btn btn-dark" style="width: max-content; float: right; border-radius: 0;"><?php echo "{$row[1]}" ?> </button>
+
     <!--Menubar-->
     <div class="contain">
         <div class="navbar">

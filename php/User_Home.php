@@ -39,6 +39,7 @@ $row = mysqli_fetch_array($result, MYSQLI_NUM);
         </div>
 
         <div id="main">
+            <button class="btn btn-dark" style="width: max-content; float: right; border-radius: 0;"><?php echo "{$row[1]}" ?> </button>
             <main>
                 <a href="#">
                     <div class="logo">

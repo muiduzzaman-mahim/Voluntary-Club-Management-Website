@@ -41,6 +41,8 @@ $row = mysqli_fetch_array($result, MYSQLI_NUM);
 <body onload="display_ct()" class="body">
     <div id="ct"></div>
 
+    <button class="btn btn-dark" style="width: max-content; float: right; border-radius: 0;"><?php echo "{$row[1]}" ?> </button>
+
     <div class="contain">
         <div class="navbar">
             <a href="User_Home.php"> <button class="btn-outline-info">Home</button></a>
