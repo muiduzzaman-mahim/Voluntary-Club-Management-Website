@@ -1,11 +1,6 @@
 <?php
 require("config.php");
 session_start();
-if (!isset($_SESSION["user_name"])) {
-    require("session_alert.php");
-    header("Refresh: $sec; url=Admin_Login.php");
-    die;
-}
 ?>
 
 <!DOCTYPE html>
