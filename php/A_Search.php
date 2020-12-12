@@ -67,7 +67,7 @@ session_start();
     </div>
 
     <!--Footer-->
-    <div class="full-footer" style="position: absolute;">
+    <div class="full-footer">
         <div class="foot">
             &copyDIU-Voluntary Club. All Rights are reserved 2020
         </div>

@@ -26,11 +26,11 @@ session_start();
         <div class="navbar">
             <a href="Admin_Home.php"> <button class="btn-outline-info">Admin Home</button></a>
             <a href="A_Member_List.php"> <button class="btn-outline-danger"> Members</button></a>
-             
+
             <a href="A_Search.php"> <button class="btn-outline-info  active">Search</button></a>
             <a href="A_Update.php"><button class="btn-outline-dark">Update</button></a>
             <a href="A_Delete.php"><button class="btn-outline-primary">Delete</button></a>
-         <a href="Admin_logout.php"><button class="btn-danger">Log Out</button></a>
+            <a href="Admin_logout.php"><button class="btn-danger">Log Out</button></a>
         </div>
     </div>
 
@@ -82,7 +82,7 @@ session_start();
 
                 <label for="Email"><b>Email Address</b></label><br>
                 <input type="email" placeholder="Email Address" name="email" value="<?php if ($row) {
-                                                                                        echo "$row[3]";
+                                                                                        echo "$row[3]";[]
                                                                                     } else {
                                                                                         null;
                                                                                     } ?>" readonly><br />
@@ -100,7 +100,7 @@ session_start();
     </div>
 
     <!--Footer-->
-    <div class="full-footer" style="position: absolute;">
+    <div class="full-footer">
         <div class="foot">
             &copyDIU-Voluntary Club. All Rights are reserved 2020
         </div>

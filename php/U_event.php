@@ -16,7 +16,7 @@ $result = mysqli_query($sql, $query);
 $row = mysqli_fetch_array($result, MYSQLI_NUM);
 ?>
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
