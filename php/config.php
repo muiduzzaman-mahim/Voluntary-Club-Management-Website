@@ -2,6 +2,6 @@
  $sec=5;
 	$host="localhost"; 
 	$user="root"; 
-	$pass="nopass"; 
+	$pass=""; 
 	$db="diuvsc"; 
 ?>
