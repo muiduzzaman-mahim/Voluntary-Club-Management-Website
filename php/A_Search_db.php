@@ -89,7 +89,7 @@ if (!isset($_SESSION["user_name"])) {
 
                 <label for="Email"><b>Email Address</b></label><br>
                 <input type="email" placeholder="Email Address" name="email" value="<?php if ($row) {
-                                                                                        echo "$row[3]";[]
+                                                                                        echo "$row[3]";
                                                                                     } else {
                                                                                         null;
                                                                                     } ?>" readonly><br />
