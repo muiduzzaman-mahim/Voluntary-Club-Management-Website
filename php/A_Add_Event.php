@@ -1,6 +1,12 @@
+<!--Session-->
 <?php
 require("config.php");
 session_start();
+if (!isset($_SESSION["user_name"])) {
+    require("session_alert.php");
+    header("Refresh: $sec; url=Admin_Login.php");
+    die;
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +32,7 @@ session_start();
         <div class="navbar">
             <a href="Admin_Home.php"> <button class="btn-outline-info">Admin Home</button></a>
             <a href="A_Member_List.php"> <button class="btn-outline-danger "> Members</button></a>
-            
+
             <a href="A_Search.php"> <button class="btn-outline-info">Search</button></a>
             <a href="A_Update.php"><button class="btn-outline-dark">Update</button></a>
             <a href="A_Delete.php"><button class="btn-outline-primary">Delete</button></a>

@@ -39,7 +39,7 @@
 
             if ($row["password"] == $password) {
                 session_start();
-                $_SESSION["id"] = $Name;
+                $_SESSION["user_name"] = $Name;
                 header("Location: Admin_Home.php");
             } else {
                 echo "<h2> Password is wrong.<br/> Please recheck your password. </h2>";
